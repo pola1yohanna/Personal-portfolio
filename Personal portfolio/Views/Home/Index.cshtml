@@ -2,7 +2,53 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div id="pageopen">
+    <div>
+        <img src="~/personalPhoto.jpg" style="border-radius:100px;height:30vh;display:block;margin:0 auto" alt="pola yohanna" />
+    </div>
+    <div>
+        <h1 style="margin:0 10px">Pola Yohanna</h1>
+    </div>
+</div>
+<hr />
+<div id="information" class="grid-container">
+    <div class="grid-item">
+        <img alt="PersonalInformation" src="~/icons/kisspng-personally-identifiable-information-computer-icons-personal-information-5b37ec6901f6b8.4166499615303916570081.jpg" />
+        <h4>Personal information</h4>
+    </div>
+    <div class="grid-item">
+        <img alt="Education" src="~/icons/5-55817_education-icon-png-photo-free-education-icon-png.png" />
+        <h4>Education</h4>
+    </div>
+    <div class="grid-item">
+        <img alt="PersonalSkills" src="~/icons/skills-icon-png-23.jpg" />
+        <h4>Personal skills</h4>
+    </div>
+    <div class="grid-item">
+        <img alt="Links" src="~/icons/link-informatic_318-10808.jpg" />
+        <h4>Links</h4>
+    </div>
+</div>
+<div id="technical">
+    <div class="tab">
+        <button class="tablinks active"  onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
+    <div id="tabcontnets">
+        <div id="London" class="tabcontent" style="display:block">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+        </div>
+    <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+        
+    </div>
 </div>
