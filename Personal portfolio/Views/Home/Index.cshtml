@@ -13,20 +13,34 @@
 <hr />
 <div id="information" class="grid-container">
     <div class="grid-item">
-        <img alt="PersonalInformation" src="~/icons/kisspng-personally-identifiable-information-computer-icons-personal-information-5b37ec6901f6b8.4166499615303916570081.jpg" />
+        <button data-toggle="modal" data-target="#mymodal"><img alt="PersonalInformation" src="~/icons/kisspng-personally-identifiable-information-computer-icons-personal-information-5b37ec6901f6b8.4166499615303916570081.jpg" /></button>
         <h4>Personal information</h4>
     </div>
-    <div class="grid-item">
-        <img alt="Education" src="~/icons/5-55817_education-icon-png-photo-free-education-icon-png.png" />
-        <h4>Education</h4>
+    <div id="mymodal" class="fade modal" role="dialog">
+        <partial name="_PersonalPartialView" />
     </div>
     <div class="grid-item">
-        <img alt="PersonalSkills" src="~/icons/skills-icon-png-23.jpg" />
-        <h4>Personal skills</h4>
+        <button data-toggle="modal" data-target="#myedu" style="border:none">
+            <img alt="Education" src="~/icons/5-55817_education-icon-png-photo-free-education-icon-png.png" />
+            <h4>Education</h4>
+        </button>
+    </div>
+    <div id="myedu" class="fade modal" role="dialog">
+        <partial name="~/Views/Shared/_EduPartialView.cshtml" />
     </div>
     <div class="grid-item">
-        <img alt="Links" src="~/icons/link-informatic_318-10808.jpg" />
+        <button data-toggle="modal" data-target="#myinfo" style="border:none"><img alt="information" src="~/icons/skills-icon-png-23.jpg" /></button>
+        <h4>More information</h4>
+    </div>
+    <div id="myinfo" class="fade modal" role="dialog">
+        <partial name="~/Views/Shared/_InformationPartialView.cshtml" />
+    </div>
+    <div class="grid-item">
+        <button data-toggle="modal" data-target="#mylinks" style="border:none"><img alt="Links" src="~/icons/link-informatic_318-10808.jpg" /></button>
         <h4>Links</h4>
+    </div>
+    <div id="mylinks" class="fade modal" role="dialog">
+        <partial name="~/Views/Shared/_LinksPartialView.cshtml" />
     </div>
 </div>
 <div id="technical">
@@ -40,15 +54,15 @@
             <h3>London</h3>
             <p>London is the capital city of England.</p>
         </div>
-    <div id="Paris" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
-    </div>
+        <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+        </div>
 
-    <div id="Tokyo" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
-    </div>
+        <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
         
     </div>
 </div>
